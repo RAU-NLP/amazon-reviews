@@ -1,0 +1,13 @@
+# data files
+*.bz2
+*.ft.txt
+
+# fastText
+fastText/
+
+# model files
+*.bin
+*.vec
+
+# OS
+.DS_Store
