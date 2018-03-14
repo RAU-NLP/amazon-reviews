@@ -5,7 +5,7 @@ p () {
 }
 
 p "Training model"
-./fastText/fasttext supervised -input data/train.ft.txt -output model
+./fastText/fasttext supervised -input data/train.ft.txt -output fastText/model
 
 p "Testing model"
-./fastText/fasttext test model.bin data/test.ft.txt
+./fastText/fasttext test fastText/model.bin data/test.ft.txt
