@@ -6,22 +6,34 @@ This repo builds fastText and trains and tests a model automatically on submit.
 
 The model is supervised classification for sentiment analysis.  The dataset included in the repo is 4M Amazon reviews, theoretically in English.  The reviews were crawled from the web, 1- and 2-star reviews labelled `positive`, 4- and 5-start `negative`, and 3-star reviews were discarded.  It is split into train (3.6M reviews) and test (0.4M).  It is 0.5B GB when compressed.  To get around GitHub's file limit of 100MB, 
 
-##### To see the results:
+##### Viewing the results
 
-Visit [travis-ci.org/RAU-NLP/amazon-reviews](https://travis-ci.org/RAU-NLP/amazon-reviews)
+Visit [travis-ci.org/RAU-NLP/amazon-reviews](https://travis-ci.org/RAU-NLP/amazon-reviews/builds) and view the *Job log*
+```
+TRAINING MODEL...
+Read 289M words
+Number of words:  5165173
+Number of labels: 2
+Progress: 100.0% words/sec/thread: 2959292 lr:  0.000000 loss:  0.238979 ETA:   0h 0m
+TESTING MODEL...
+N	400000
+P@1	0.916
+R@1	0.916
+Number of examples: 400000
+```
 
-##### To run locally:
+##### Running locally
 
 ```
 sh init.sh
 sh run.sh
 ```
 
-##### To copy:
+##### Running your own copy
 
 [Fork this repo](https://github.com/RAU-NLP/amazon-reviews/fork) and [add Travis CI](https://docs.travis-ci.com/user/getting-started/) to your fork
 
-##### To play with the parameters:
+##### Playing with the parameters
 
 Edit the [`fasttext supervised` parameters](https://github.com/facebookresearch/fastText#full-documentation) in `run.sh` in your fork
 
