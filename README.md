@@ -28,6 +28,7 @@ Number of examples: 400000
 
 ##### Running locally
 
+Clone the repo, then inside the directory run:
 ```
 sh init.sh
 sh run.sh
