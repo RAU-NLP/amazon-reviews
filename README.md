@@ -26,20 +26,19 @@ R@1	0.916
 Number of examples: 400000
 ```
 
+##### Running on your own repo
+
+[Fork this repo](https://github.com/RAU-NLP/amazon-reviews/fork) and [add Travis CI](https://docs.travis-ci.com/user/getting-started/) to your repo
+
+##### Playing with the parameters
+
+Edit the [`fasttext supervised` parameters](https://github.com/facebookresearch/fastText#full-documentation) in `run.sh` in your repo
+
+To avoid a run on minor updates, add `[skip ci]` or `[ci skip]` to the commit message.
+
 ##### Running locally
 
-Clone the repo, then inside the directory run:
 ```
 sh init.sh
 sh run.sh
 ```
-
-##### Running your own copy
-
-[Fork this repo](https://github.com/RAU-NLP/amazon-reviews/fork) and [add Travis CI](https://docs.travis-ci.com/user/getting-started/) to your fork
-
-##### Playing with the parameters
-
-Edit the [`fasttext supervised` parameters](https://github.com/facebookresearch/fastText#full-documentation) in `run.sh` in your fork
-
-To avoid a run on minor updates, add `[skip ci]` or `[ci skip]` to the commit message.
