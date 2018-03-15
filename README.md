@@ -11,7 +11,7 @@ Each run takes 10 to 15 minutes with the default parameters.  (On a modest MacBo
 
 ##### Viewing the results
 
-Visit [travis-ci.org/RAU-NLP/amazon-reviews](https://travis-ci.org/RAU-NLP/amazon-reviews/builds) and view the *Job log*
+Visit [travis-ci.org/RAU-NLP/amazon-reviews](https://travis-ci.org/RAU-NLP/amazon-reviews/builds), click a build and view the *Job log*
 ```
 TRAINING MODEL...
 Read 289M words
