@@ -24,3 +24,5 @@ sh run.sh
 ##### To play with the parameters:
 
 Edit the [`fasttext supervised` parameters](https://github.com/facebookresearch/fastText#full-documentation) in `run.sh` in your fork
+
+To avoid a run on minor updates, add `[skip ci]` or `[ci skip]` to the commit message.
