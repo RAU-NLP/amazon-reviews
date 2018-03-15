@@ -15,6 +15,7 @@ Read 289M words
 Number of words:  5165173
 Number of labels: 2
 Progress: 100.0% words/sec/thread: 2959292 lr:  0.000000 loss:  0.238979 ETA:   0h 0m
+
 TESTING MODEL...
 N	400000
 P@1	0.916
