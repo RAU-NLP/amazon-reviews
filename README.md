@@ -1,9 +1,8 @@
-[![Build Status](https://travis-ci.org/RAU-NLP/amazon-reviews.png)](https://travis-ci.org/RAU-NLP/amazon-reviews)
 
 ### Training a fastText model in a GitHub repo's continous build
 *Prediction model for sentiment analysis on 4M Amazon reviews with 91.6% accuracy in 10 minutes*  
 
-This repo trains and tests a [fastText](https://github.com/facebookresearch/fastText) prediction model automatically on submit.
+This repo trains and tests a [fastText](https://github.com/facebookresearch/fastText) prediction model automatically on submit.  Current status: [![Build Status](https://travis-ci.org/RAU-NLP/amazon-reviews.png)](https://travis-ci.org/RAU-NLP/amazon-reviews)
 
 The model is supervised classification for sentiment analysis.  The dataset included in the repo is 4M Amazon reviews, theoretically in English, in the fastText format.  The reviews were crawled from the web, 1- and 2-star reviews labelled `positive`, 4- and 5-start `negative`, and 3-star reviews were discarded.  It is split into train (3.6M reviews) and test (0.4M).  It is 0.5B GB when compressed.  To get around GitHub's file limit of 100MB, the files were `split` and a re-joined with `cat`.
 
