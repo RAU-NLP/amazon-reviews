@@ -1,5 +1,5 @@
 
-### Training a fastText model in a GitHub repo's continous build
+### Training a fastText model in a GitHub repo's continuous build
 *Prediction model for sentiment analysis on 4M Amazon reviews with 91.6% accuracy in 10 minutes*  
 
 This repo trains and tests a [fastText](https://github.com/facebookresearch/fastText) prediction model automatically on submit.  Current status: [![Build Status](https://travis-ci.org/RAU-NLP/amazon-reviews.png)](https://travis-ci.org/RAU-NLP/amazon-reviews)
