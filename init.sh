@@ -1,19 +1,18 @@
 #!/bin/bash
 
-if [ ! -f data/train.ft.txt ]; then
-    printf "\n\nPREPARING DATA...\n"
-    cat data/train.chunk.* > data/train.ft.txt
-    cat data/test.chunk.* > data/test.ft.txt
-fi
+for file in data/*/init.sh
+do
+  printf "\n\nPREPARING DATA $file...\n"
+  sh "$file"
+done
 
-if [ ! -d fastText/fasttext ] ; then
+if [ ! -d fastText ] ; then
     printf "\n\nDOWNLOADING FASTTEXT...\n"
     git clone https://github.com/facebookresearch/fastText.git
 fi
 
 if [ ! -f fastText/fasttext ]; then
     printf "\n\nBUILDING FASTTEXT...\n"
-    git clone https://github.com/facebookresearch/fastText.git
     cd fastText
     make
     cd ..
